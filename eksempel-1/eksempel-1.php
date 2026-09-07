@@ -15,7 +15,7 @@ echo "God dag " . $fornavn . " " . $etternavn . "!";
 echo "<br>";
 echo "Du er " . $alder . " år gammel.";
 echo "<br>";
-echo "<button type='button' onclick='window.location.href=\"index.html\"'>Tilbake</button>";
+echo "<button type='button' id='tilbake' onclick='window.location.href=\"index.html\"'>Tilbake</button>";
 ?>
 
 </body>

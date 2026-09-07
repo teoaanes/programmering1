@@ -7,7 +7,10 @@ body {
   align-items: center;
 }
 
+button {
+  margin: 1.5rem;
+}
 
 input{
-  margin: 1.5px;
+  margin: 1.5rem;
 }
