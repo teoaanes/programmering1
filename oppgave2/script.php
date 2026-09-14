@@ -6,7 +6,7 @@
 
 $number = $_POST["matte"];
 
-if ($number == "!9") {
+if ($number == !9) {
     echo"Feil, $number . er ikke riktig";
 }
 
