@@ -11,7 +11,7 @@ $tall1 =$_POST["tall1"];
 $tall2 =$_POST["tall2"];
 
 if($tall1<$tall2){
-    echo"Dine tall er $tall1 og $tall2" . "<br>$tall1 er mindre enn $tall1";
+    echo"Dine tall er $tall1 og $tall2" . "<br>$tall1 er mindre enn $tall2";
 }
 else{
     echo"Dine tall er $tall1 og $tall2" . "<br>$tall1 er større enn $tall2";
