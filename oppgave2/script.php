@@ -6,11 +6,11 @@
 
 $number = $_POST["matte"];
 
-if ($number == !9) {
-    echo"Feil, $number . er ikke riktig";
+if ($number == 9) {
+    echo "Korrekt, svaret er 9";
 }
 
 else {
-    echo"Korrekt, svaret er 9";
+    echo"Feil svar, " . $number . " er ikke riktig";
 }
 ?>
