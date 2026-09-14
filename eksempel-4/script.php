@@ -16,7 +16,7 @@ else if ($svar == "Ja") {
     echo "Du har svart ja";
 }
 
-elseif ($svar == "Nei") {
+else if ($svar == "Nei") {
     echo "Du har svart nei";
 }
 
