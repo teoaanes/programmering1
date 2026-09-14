@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="eksempel-5\style.css">
+    <title>Eksempel 5</title>
 </head>
 
 <?php
@@ -31,4 +32,7 @@ else if ($tall3 == "4"){
 else {
     echo"Operasjonen er ugyldig";
 }
+
+    echo "<button type='button' id='tilbake' onclick='window.location.href=\"index.html\"'>Tilbake til Index</button>";
+    echo "<button type='button' id='tilbake' onclick='window.location.href=\"eksempel-5/eksempel-5.html\"'>Tilbake</button>";
 ?>
