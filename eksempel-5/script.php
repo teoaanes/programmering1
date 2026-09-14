@@ -13,4 +13,20 @@ if ($tall3 == "1"){
     $sum = $tall1+$tall2;
     echo "$tall1 + $tall2 = $sum";
 }
+
+else if ($tall3 == "2"){
+    $sum = $tall1-$tall2;
+    echo "$tall1 - $tall2 = $sum";
+}
+
+else if ($tall3 == "3"){
+    $sum = $tall1*$tall2;
+    echo "$tall1 * $tall2 = $sum";
+}
+
+else if ($tall3 == "4"){
+    $sum = $tall1/$tall2;
+    echo "$tall1 / $tall2 = $sum";
+    
+}
 ?>
