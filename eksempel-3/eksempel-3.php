@@ -11,7 +11,7 @@
         <button type="reset">Nullstill</button>
     </form>
 
-<div><?php
+<?php
 
 $number = $_POST["matte"];
 
@@ -23,5 +23,5 @@ else {
     echo"Feil svar, " . $number . " er ikke riktig";
 }
 ?>
-</div>
+
 </body>
