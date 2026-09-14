@@ -8,7 +8,7 @@
     <form action="" method="POST">
         <input type="number" name="matte" required>
         <button type="submit">Sjekk</button>
-        <button type="reset" name="nullstill">Nullstill</button>
+        <button type="submit" name="nullstill">Nullstill</button>
     </form>
 
 <div><?php
