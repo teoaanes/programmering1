@@ -11,6 +11,6 @@ $tall3=$_POST["tall3"];
 
 if ($tall3 == "1"){
     $sum = $tall1+$tall2;
-    echo"$tall 1 . + . $tall2 . = . $sum";
+    echo "$tall1 . + . $tall2 . = . $sum";
 }
 ?>
