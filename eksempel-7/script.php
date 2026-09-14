@@ -11,7 +11,7 @@ $tall1 =$_POST["tall1"];
 $tall2 =$_POST["tall2"];
 $tall3 =$_POST["tall3"];
 
-echo"Dine tall er: <br> Tall 1:$tall1 <br> Tall2: $tall2 <br> Tall 3:$tall3 <br><br>";
+echo"Dine tall er: <br> Tall 1:$tall1 <br> Tall 2: $tall2 <br> Tall 3:$tall3 <br><br>";
 
 if($tall1==$tall2 && $tall1==$tall3 && $tall2==$tall3){
     echo"Tallene dine er like";
