@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" href="eksempel-5\style.css">
     <title>Eksempel 5</title>
+    <meta charset="UTF-8">
 </head>
 
 <?php
