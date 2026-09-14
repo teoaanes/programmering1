@@ -5,10 +5,23 @@
 </head>
 <body>
     <h1>Hva er 3 ganger 3?</h1>
-    <form action="eksempel-3/script.php" method="POST">
+    <form action="" method="POST">
         <input type="number" name="matte" required>
         <button type="submit">Sjekk</button>
         <button type="reset">Nullstill</button>
     </form>
 
+<div><?php
+
+$number = $_POST["matte"];
+
+if ($number == 9) {
+    echo "Korrekt, svaret er 9";
+     }
+
+else {
+    echo"Feil svar, " . $number . " er ikke riktig";
+}
+?>
+</div>
 </body>
