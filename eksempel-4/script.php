@@ -27,6 +27,9 @@ else if (!$svar or !$alder) {
     }
 }
 
+else if ($svar == "Ja" && $alder < 18) {
+    echo "Du har svar ja, og at du er under 18 (OK Young Sheldon ahh)";
+}
 else if ($svar == "Ja" && $alder) {
     echo "Du har svart ja og at du er $alder";
 }
@@ -34,6 +37,8 @@ else if ($svar == "Ja" && $alder) {
 else if ($svar == "Nei" && $alder) {
     echo "Du har svart nei og at du er $alder";
 }
+
+
 
 else {
     echo "Du har ikke svart ja eller nei";
