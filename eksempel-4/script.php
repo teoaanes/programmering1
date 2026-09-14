@@ -8,16 +8,31 @@
 <?php
 
 $svar = $_POST["svar"];
+$alder = $_POST["alder"];
 
-if (!$svar) {
-    echo"Du har ikke svart";
-}
-else if ($svar == "Ja") {
-    echo "Du har svart ja";
+if (!$svar and !$alder) {
+    echo"Du har ikke svart i det hele tatt";
 }
 
-else if ($svar == "Nei") {
-    echo "Du har svart nei";
+else if (!$svar or !$alder) { 
+    echo "Du mangler svar for ";
+    if (!$svar) {
+        echo "om du er student";
+    }
+    if (!$svar && !$alder) {
+        echo " og ";
+    }
+    if (!$alder) {
+        echo "alder";
+    }
+}
+
+else if ($svar == "Ja" && $alder) {
+    echo "Du har svart ja og at du er $alder";
+}
+
+else if ($svar == "Nei" && $alder) {
+    echo "Du har svart nei og at du er $alder";
 }
 
 else {
