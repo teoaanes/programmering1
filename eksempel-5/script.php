@@ -27,6 +27,8 @@ else if ($tall3 == "3"){
 else if ($tall3 == "4"){
     $sum = $tall1/$tall2;
     echo "$tall1 / $tall2 = $sum";
-    
+}
+else {
+    echo"Operasjonen er ugyldig";
 }
 ?>
