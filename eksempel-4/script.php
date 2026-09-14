@@ -41,6 +41,8 @@ else {
     echo "Du har ikke svart ja eller nei";
 }
 
+    echo "<button type='button' id='tilbake' onclick='window.location.href=\"index.html\"'>Tilbake til Index</button>";
+    echo "<button type='button' id='tilbake' onclick='window.location.href=\"eksempel-4/eksempel-4.html\"'>Tilbake</button>";
 ?>
 
 
