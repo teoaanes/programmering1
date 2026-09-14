@@ -6,13 +6,13 @@
 <body>
     <h1>Hva er 3 ganger 3?</h1>
     <form action="" method="POST">
-        <input type="number" required>
-        <button type="submit" name="matte">Sjekk</button>
+        <input type="number" name="matte" required>
+        <button type="submit" name="sjekk">Sjekk</button>
         <button type="submit" name="nullstill">Nullstill</button>
     </form>
 
 <div><?php
-if (isset($_POST["matte"])) {
+if (isset($_POST["sjekk"])) {
     $number = $_POST["matte"];
 
     if ($number == 9) {
