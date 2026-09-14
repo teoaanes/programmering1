@@ -11,18 +11,19 @@
         <button type="reset">Nullstill</button>
     </form>
 
-<?php
+<div><?php
 if (isset($_POST["matte"])) {
-$number = $_POST["matte"];
+    $number = $_POST["matte"];
 
-if ($number == 9) {
-    echo "Korrekt, svaret er 9";
+    if ($number == 9) {
+        echo "Korrekt, svaret er 9";
      }
 
-else {
-    echo"Feil svar, " . $number . " er ikke riktig";
+    else {
+        echo"Feil svar, " . $number . " er ikke riktig";
 }
 }
 ?>
+</div>
 
 </body>
