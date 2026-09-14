@@ -24,14 +24,14 @@ if (!$svar or !$alder) {
     }
 }
 
-else if ($svar == "Ja || ja" && $alder < 18) {
+else if ($svar == "Ja" || "ja" && $alder < 18) {
     echo "Du har svart ja, og at du er under 18 (OK Young Sheldon ahh)";
 }
-else if ($svar == "Ja || ja" && $alder) {
+else if ($svar == "Ja" || "ja" && $alder) {
     echo "Du har svart ja og at du er $alder";
 }
 
-else if ($svar == "Nei || nei" && $alder) {
+else if ($svar == "Nei" || "nei" && $alder) {
     echo "Du har svart nei og at du er $alder";
 }
 
