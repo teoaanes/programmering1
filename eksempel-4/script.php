@@ -10,11 +10,8 @@
 $svar = $_POST["svar"];
 $alder = $_POST["alder"];
 
-if (!$svar and !$alder) {
-    echo"Du har ikke svart i det hele tatt";
-}
 
-else if (!$svar or !$alder) { 
+if (!$svar or !$alder) { 
     echo "Du mangler svar for ";
     if (!$svar) {
         echo "om du er student";
@@ -28,7 +25,7 @@ else if (!$svar or !$alder) {
 }
 
 else if ($svar == "Ja" && $alder < 18) {
-    echo "Du har svar ja, og at du er under 18 (OK Young Sheldon ahh)";
+    echo "Du har svart ja, og at du er under 18 (OK Young Sheldon ahh)";
 }
 else if ($svar == "Ja" && $alder) {
     echo "Du har svart ja og at du er $alder";
