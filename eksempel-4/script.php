@@ -9,7 +9,7 @@
 
 $svar = $_POST["svar"];
 
-if ($svar == "!svar") {
+if (!$svar) {
     echo"Du har ikke svart";
 }
 else if ($svar == "Ja") {
@@ -20,7 +20,7 @@ else if ($svar == "Nei") {
     echo "Du har svart nei";
 }
 
-else if ($svar == "!Ja or !Nei") {
+else {
     echo "Du har ikke svart ja eller nei";
 }
 
