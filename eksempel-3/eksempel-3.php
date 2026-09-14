@@ -6,8 +6,8 @@
 <body>
     <h1>Hva er 3 ganger 3?</h1>
     <form action="" method="POST">
-        <input type="number" name="matte" required>
-        <button type="submit">Sjekk</button>
+        <input type="number" required>
+        <button type="submit" name="matte">Sjekk</button>
         <button type="submit" name="nullstill">Nullstill</button>
     </form>
 
