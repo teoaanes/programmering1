@@ -10,7 +10,11 @@
 $tall1 =$_POST["tall1"];
 $tall2 =$_POST["tall2"];
 
-if($tall1<$tall2){
+if($tall1==$tall2){
+    echo "Tallene dine er like";
+}
+
+else if ($tall1<$tall2){
     echo"Dine tall er $tall1 og $tall2" . "<br>$tall1 er mindre enn $tall2";
 }
 else{
