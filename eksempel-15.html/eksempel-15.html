@@ -9,11 +9,12 @@
     <h1>Eksempel 15 </h1>
     <p>Trykk på knappen for å skrive ut tallene fra 1 til ditt valg</p>
     <form action="eksempel-15/script.php" method="POST">
-        <input type="number" name="tall" placeholder="1" required>
-        <input type="number" name="tall" placeholder="2" required>
-        <input type="number" name="tall" placeholder="3" required>
-        <input type="number" name="tall" placeholder="4" required>
-        <input type="number" name="tall" placeholder="5" required>
-        <input type="submit" value="Skriv ut"></form>
+        <input type="number" name="tall[]" placeholder="1" required>
+        <input type="number" name="tall[]" placeholder="2" required>
+        <input type="number" name="tall[]" placeholder="3" required>
+        <input type="number" name="tall[]" placeholder="4" required>
+        <input type="number" name="tall[]" placeholder="5" required>
+
+        <input type="submit" value="gå videre"></form>
 </body>
 </html>
