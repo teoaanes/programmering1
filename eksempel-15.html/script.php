@@ -1,11 +1,22 @@
 <?php
 
-$tall = $_POST['tall'];
-$tall2 = explode(",", $tall);
+$tall = $_POST["tall1"] . "," .
+        $_POST["tall2"] . "," .
+        $_POST["tall3"] . "," .
+        $_POST["tall4"] . "," .
+        $_POST["tall5"];
 
-echo"Tallene i rekkefølgen de er skrevet inn i: <br>";
-for ($i = 0; $i < count($tall2); $i++) {
-    echo $tall2[$i] . "<br>";
+$tall = explode(",", $tall);
+
+echo "tallene i rekkefølgen du skrev: <br>";
+foreach ($tall as $tallene) {
+    echo $tallene . "<br>";
 }
 
+echo "<br><br>";
+echo "Tallene i motsatt rekkefølge";
+
+foreach (array_reverse($tall) as $nummer) {
+    echo $nummer . " ";
+}
 ?>
