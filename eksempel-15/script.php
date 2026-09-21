@@ -14,9 +14,9 @@ foreach ($tall as $tallene) {
 }
 
 echo "<br><br>";
-echo "Tallene i motsatt rekkefølge";
+echo "Tallene i motsatt rekkefølge: <br>";
 
 foreach (array_reverse($tall) as $nummer) {
-    echo $nummer . " ";
+    echo $nummer . "<br>";
 }
 ?>
