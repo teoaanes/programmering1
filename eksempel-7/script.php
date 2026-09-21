@@ -19,19 +19,26 @@ if($tall1==$tall2 && $tall1==$tall3 && $tall2==$tall3){
 
 if ($tall1>$tall2) {
     echo "Tall 1 er større enn Tall 2<br>";
-}   else {
+}   elseif ($tall1<$tall2) {
     echo "Tall 1 er mindre enn Tall 2<br>";
+}   else {  
+    echo "Tall 1 er likt Tall 2<br>";
 }
 
 if ($tall1>$tall3) {
     echo "Tall 1 er større enn Tall 3<br>";
-} else {
+} elseif ($tall1<$tall3) {
     echo "Tall 1 er mindre enn Tall 3<br>";
+} else {
+    echo "Tall 1 er likt Tall 3<br>";
 }
 
 if ($tall2>$tall3) {
     echo "Tall 2 er større enn Tall 3<br>";
-} else {
+} elseif ($tall2<$tall3) {
     echo "Tall 2 er mindre enn Tall 3<br>";
+} else {
+    echo "Tall 2 er likt Tall 3<br>";
 }
+
 ?>
