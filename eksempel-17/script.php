@@ -18,7 +18,7 @@ else {
 
     if(!ctype_alpha($del1)){
         $status = false;
-        echo "klassekode må starte med bokstaver";
+        echo "klassekode må starte med bokstaver" . "<br>";
 
     }
 
