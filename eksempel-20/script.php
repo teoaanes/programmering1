@@ -1,18 +1,15 @@
 <?php
 
 $klasse=$_POST['klassekode'];
-$status = true;
 
-function validerkk($klasse,$status){
+function validerkk($klasse,){
     $feil=[];
     
     if(!$klasse){
-        $status = false;
         $feil[] = "ingen emnekode er utfylt";
     }
 
     elseif(strlen($klasse) != 3){
-        $status = false;
         $feil[] = "klassekode må være 3 tegn";
     }
     else {
@@ -20,13 +17,11 @@ function validerkk($klasse,$status){
         $del2 = substr($klasse, 2, 1);
 
         if(!ctype_alpha($del1)){
-            $status = false;
             $feil[] = "Klassekode må starte med bokstaver" . "<br>";
 
         }
 
         if(!ctype_digit($del2)){
-            $status = false;
             $feil[] = "Klassekode må slutte med tall";
         }
     }
@@ -39,6 +34,6 @@ function validerkk($klasse,$status){
     }
 }
 
-echo validerkk($klasse,$status);
+echo validerkk($klasse);
 
 ?>
