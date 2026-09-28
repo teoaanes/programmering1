@@ -18,13 +18,13 @@ else {
 
     if(!ctype_alpha($del1)){
         $status = false;
-        echo "klassekode må starte med bokstaver" . "<br>";
+        echo "Klassekode må starte med bokstaver" . "<br>";
 
     }
 
     if(!ctype_digit($del2)){
         $status = false;
-        echo "klassekode må slutte med tall";
+        echo "Klassekode må slutte med tall";
     }
 }
 
