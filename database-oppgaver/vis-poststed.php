@@ -15,7 +15,7 @@ print("<tr><th>Postnummer</th><th>Poststed</th></tr>");
 for ($r=1;$r<=$antallRader;$r++)
 {
     $rad=mysqli_fetch_array($sqlResultat);
-    $poststed=$rad["poststnr"];
+    $poststed=$rad["postnr"];
     $postnummer=$rad["poststed"];
     print("<tr><td>$poststed</td><td>$postnummer</td></tr>");
 }
