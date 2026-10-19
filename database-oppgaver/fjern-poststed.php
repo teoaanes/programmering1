@@ -6,10 +6,6 @@
     <form method="post" action="">
         <label for="postnr">Postnummer:</label>
         <input type="text" name="postnr" id="postnr" required><br>
-
-        <label for="poststed">Poststed:</label>
-        <input type="text" name="poststed" id="poststed" required><br>
-
         <input type="submit" name="postKnapp" value="Fjern">
     </form>
 </html>
