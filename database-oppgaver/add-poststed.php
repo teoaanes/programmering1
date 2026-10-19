@@ -25,11 +25,11 @@ if (isset($_POST ["postKnapp"])){
         echo("Både postnummer og poststed må fylles ut");
     }
     elseif(!ctype_digit($postnr)){
-        return "Postnummer må være tall";
+        echo("Postnummer må være tall");
     }
     
     elseif(strlen($postnr) !=4){
-        return "Postnummer må være 4 siffer";
+        echo("Postnummer må være 4 siffer");
     }
     else{
         $sqlSetning="SELECT * FROM poststed WHERE postnr='$postnr';";
