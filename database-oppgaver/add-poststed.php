@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<script src="javascript.js"> </script>
+<script src="database-oppgaver/javascript.js"> </script>
 
 <html>
     <h1>Legg til poststed</h1>

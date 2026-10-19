@@ -1,11 +1,11 @@
 <?php
 ?>
 
-<script src="funksjoner.js"> </script>
+<script src="database-oppgaver/javascript.js"> </script>
 
 <html>
     <h1>Fjern poststed</h1>
-    <form method="post" action="" onSubmit="return bekreft()>
+    <form method="post" action="" onSubmit="return bekreft()">
         <label for="postnr">Postnummer:</label>
         <input type="text" name="postnr" id="postnr" required><br>
         <input type="submit" name="postKnapp" value="Fjern">
