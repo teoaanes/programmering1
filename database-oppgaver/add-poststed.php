@@ -5,7 +5,7 @@
     <h1>Legg til poststed</h1>
     <form method="post" action="">
         <label for="postnr">Postnummer:</label>
-        <input type="text" name="postnr" id="postnr" required><br>
+        <input type="number" name="postnr" id="postnr" required><br>
 
         <label for="poststed">Poststed:</label>
         <input type="text" name="poststed" id="poststed" required><br>
@@ -24,14 +24,8 @@ if (isset($_POST ["postKnapp"])){
     if(!$postnr || !$poststed){
         echo("Både postnummer og poststed må fylles ut");
     }
-    elseif(!ctype_digit($postnr)){
-        echo("Postnummer må være tall");
-    }
-    
-    elseif(strlen($postnr) !=4){
-        echo("Postnummer må være 4 siffer");
-    }
-    else{
+
+    elseif(strlen($postnr)==4){
         $sqlSetning="SELECT * FROM poststed WHERE postnr='$postnr';";
         $sqlResultat=mysqli_query($db, $sqlSetning) or die ("Ikke mulig å hente info fra databasen");
         $antallRader=mysqli_num_rows($sqlResultat);
@@ -47,7 +41,9 @@ if (isset($_POST ["postKnapp"])){
         }
 
         }
-
+    else{
+    echo("Her har det skjedd noe rart");
+    }
 
 }
 
