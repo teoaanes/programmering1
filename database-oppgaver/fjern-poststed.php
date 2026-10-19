@@ -21,7 +21,7 @@ if (isset($_POST["postKnapp"])){
         echo("Postnummer må fylles ut");
     }
     else{
-        $sqlSetning="SELECT * FROM poststed WHERE postnr='$postnr');";
+        $sqlSetning="SELECT * FROM poststed WHERE postnr='$postnr';";
         $sqlResultat=mysqli_query($db, $sqlSetning) or die ("Ikke mulig å hente å hente info fra database");
         $antallRader=mysqli_num_rows($sqlResultat);
 
