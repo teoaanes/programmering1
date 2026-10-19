@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<script src="database-oppgaver/javascript.js"> </script>
+<script src="javascript.js"> </script>
 
 <html>
     <h1>Fjern poststed</h1>
