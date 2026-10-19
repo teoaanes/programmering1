@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<script src="funksjoner.js"> </script>
+<script src="javascript.js"> </script>
 
 <html>
     <h1>Legg til poststed</h1>
