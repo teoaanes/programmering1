@@ -10,10 +10,14 @@ $antallRader=mysqli_num_rows($sqlResultat);
 
 print("<h3>Poststeder</h3>");
 print("<table border=1>");
-print("<tr><th>Poststed</th><th>Postnummer</th></tr>");
+print("<tr><th>Postnummer</th><th>Poststed</th></tr>");
 
-while($rad=mysqli_fetch_assoc($sqlResultat)){
-    print("<tr><td>".$rad['poststed']."</td><td>".$rad['postnummer']."</td></tr>");
+for ($r=1;$r<=$antallRader;$r++)
+{
+    $rad=mysqli_fetch_array($sqlResultat);
+    $poststed=$rad["poststnr"];
+    $postnummer=$rad["poststed"];
+    print("<tr><td>$poststed</td><td>$postnummer</td></tr>");
 }
 
 print("</table>");
