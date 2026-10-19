@@ -1,10 +1,10 @@
 <?php
 ?>
 
-<script src="javascript.js"> </script>
 
 <html>
     <h1>Fjern poststed</h1>
+    <script src="javascript.js"> </script>
     <form method="post" action="" onSubmit="return bekreft()">
         <label for="postnr">Postnummer:</label>
         <input type="text" name="postnr" id="postnr" required><br>
